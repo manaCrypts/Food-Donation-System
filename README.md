@@ -1,29 +1,42 @@
-# 🍲 Food Donation System
+# Food Donation System
 
-A web-based application built during the **Fundamentals of Software Engineering (4th semester)** course at FAST NUCES. The system connects **donors, NGOs, and recipients** to reduce food waste and ensure secure distribution.
+A complete Flask website for managing food donations with a donor form, recipient search, and admin dashboard.
 
-## 🔑 Features
-- Donors can register and list surplus food items (type, quantity, expiry).
-- NGOs/recipients can browse donations, claim items, and track distribution.
-- Admin dashboard for transparency, validation, and fair allocation.
-- Real-time notifications for new donations and successful claims.
+## Features
+- Submit a food donation with pickup details
+- Search available donations by food type and city
+- View current donations in a clean results page
+- Admin dashboard to monitor donations and mark items as taken
 
-## 🛠️ Tech Stack
-- **Frontend:** HTML, CSS, JavaScript  
-- **Backend Logic:** C++ for donation management and tracking  
-- **Database:** MySQL/SQLite  
-
-## 🎯 Objectives
-- Reduce food waste by redistributing surplus food.  
-- Provide transparency and accountability in donation tracking.  
-- Support NGOs in managing food distribution efficiently.  
-- Encourage community participation in charitable causes.  
-
-## 📚 Academic Context
-Developed as part of the **Fundamentals of Software Engineering course (4th semester)**, showcasing integration of **frontend design** with **backend logic in C++**, emphasizing secure coding and collaborative project work.
-
-## 🚀 Getting Started
-1. Clone the repository:
+## Setup
+1. Create and activate a Python virtual environment:
    ```bash
-   git clone https://github.com/manaCrypts/food-donation-system.git
+   python -m venv venv
+   venv\Scripts\activate
+   ```
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+3. Create the SQLite database:
+   ```bash
+   python create_db.py
+   ```
+4. Run the application:
+   ```bash
+   python app.py
+   ```
+5. Open the website at `http://127.0.0.1:5000`
 
+## Admin Dashboard
+- Visit `/admin-login`
+- Default credentials:
+  - username: `admin`
+  - password: `password123`
+
+To change admin credentials, set environment variables before running the app:
+```bash
+set ADMIN_USERNAME=admin
+set ADMIN_PASSWORD=securepass
+set SECRET_KEY=your-secret-key
+```
