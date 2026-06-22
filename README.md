@@ -25,5 +25,5 @@ Developed as part of the **Fundamentals of Software Engineering course (4th seme
 ## 🚀 Getting Started
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/food-donation-system.git
+   git clone https://github.com/manaCrypts/food-donation-system.git
 
